@@ -16,7 +16,6 @@ public class Skaiciuotuvas
     {
         int ats = 0;
         
-        if(null != veiksmas)
         switch (veiksmas) {
             case "sudeti":
                 ats = skaicius1.intValue() + skaicius2.intValue();
@@ -40,7 +39,6 @@ public class Skaiciuotuvas
     {
         int ats = 0;
         
-        if(veiksmas != 0)
         switch (veiksmas) {
             case '+':
                 ats = skaicius1.intValue() + skaicius2.intValue();
