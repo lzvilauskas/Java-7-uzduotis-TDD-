@@ -16,7 +16,7 @@ public class Skaiciuotuvas
     {
         int ats = 0;
         
-        switch (veiksmas) {
+        switch (veiksmas.toLowerCase()) {
             case "sudeti":
                 ats = skaicius1.intValue() + skaicius2.intValue();
                 break;
@@ -30,7 +30,7 @@ public class Skaiciuotuvas
                 ats = skaicius1.intValue() * skaicius2.intValue();
                 break;
             default:
-                break;
+                throw new IllegalArgumentException();
         }
         return ats;
     }
@@ -53,7 +53,7 @@ public class Skaiciuotuvas
                 ats = skaicius1.intValue() * skaicius2.intValue();
                 break;
             default:
-                break;
+               throw new IllegalArgumentException();
         }
         return ats;
     }
